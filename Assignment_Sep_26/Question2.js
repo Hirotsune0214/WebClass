@@ -8,24 +8,25 @@ Function duplicatesArrayInSorted(array) {
 duplicates = 重複
 ‘*/
 
-let numList = [2, 10, 12, 12, 40, 50]; //
+let numList = [2, 10, 12, 12, 40, 50];
 
 function duplicatesArrayInSorted(array) {
-  let num = array[0]; //2
-
-  //I need change sentences of for
-  //return
-  for (let i = 0; i <= numList; i++) {
-    for (let j = 0; j < numList[i + 1]; j++) {
-      if (num === num.length) {
-        return ture
+  
+  for (let i = 0; i < array.length; i++) {
+    for (let j = 0; j < array.length; j++){
+      if (array[j] == array[j + 1]) {
+        return true;
       } else{
-        return false
+        return false;
       }
     } //for
   } //for
-  return num
+  return array;
 } //function
 
-let duplicatesNumber = duplicatesArrayInSorted(numList);
-console.log(duplicatesNumber);
+console.log(duplicatesArrayInSorted(numList));
+
+/*
+
+
+*/
