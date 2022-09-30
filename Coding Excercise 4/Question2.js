@@ -1,6 +1,5 @@
 /*
 Write a function to check if there are duplicates in a sorted array ?
-// HINT - You have to use 2 for loops nested to solve this problem
 Let numList = [ 2, 10, 12, 12, 40, 50]; //
 Function duplicatesArrayInSorted(array) {
 // Write your logic here
@@ -8,25 +7,19 @@ Function duplicatesArrayInSorted(array) {
 duplicates = 重複
 ‘*/
 
-let numList = [2, 10, 12, 12, 40, 50];
+
 
 function duplicatesArrayInSorted(array) {
   
   for (let i = 0; i < array.length; i++) {
-    for (let j = 0; j < array.length; j++){
-      if (array[j] == array[j + 1]) {
-        return true;
-      } else{
+    //let j = i + 1;
+      if (array[i] === array[i + 1]) {
         return false;
       }
-    } //for
   } //for
-  return array;
+  return true;
 } //function
 
+let numList = [2, 10, 15, 20, 30, 40]; //true
+//let numList = [2, 10, 12, 12, 40, 50]; //false
 console.log(duplicatesArrayInSorted(numList));
-
-/*
-
-
-*/

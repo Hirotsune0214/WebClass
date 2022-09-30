@@ -7,20 +7,20 @@ Function duplicatesArray(array) {
 }   
 duplicatesArray(numList) // True*/
 
-let numList = [ 20, 40, -10, 5, 40, 5, 11]; 
+
 
 function duplicatesArray(array) {
   
     for (let i = 0; i < array.length; i++) {
-      for (let j = 0; j < array.length; j++){
-        if (array[j] == array[j + 1]) {
-          return true
-        } else{
-          return false
+      for (let j = i + 1; j < array.length; j++){
+        if (array[i] === array[j]) {
+          return true;
+        } 
         }
-      } //for
     } //for
-    return array
+    return false;
   } //function
   
+  //let numList = [ 20, 40, -10, 5, 35, 100, 11]; //false
+  let numList = [ 20, 40, -10, 5, 40, 5, 11]; //true
   console.log(duplicatesArray(numList));

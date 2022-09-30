@@ -19,3 +19,21 @@ console.log(result);
 
 
 */
+
+let unSortedNumArray = [100, 4, 5, 11, 0, 20, 3, 4]; 
+function compareFunDesc(a, b) {
+
+  if (a > b) {
+      return -1;
+  }
+
+  if (a < b) {
+      return 1;
+  }
+
+  // They were equal numbers
+  return 0;
+
+}
+
+console.log(unSortedNumArray.sort(compareFunDesc), "Descending fashion");
