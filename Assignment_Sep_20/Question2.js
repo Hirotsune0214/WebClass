@@ -34,12 +34,10 @@ function printStars(n) {
     let item = "";
 
     for (let i = 0; i <= n ; i++) {
-      item = item + "*";
-      console.log(item);
-    }
-     for(let j = n; j > 0 ; j-- ){ //Check
-       item = item.slice(1);
+     for(let j = n; j <= i - n ; j++ ){ //Check
        console.log(item);
-     }
+     } //for
+     
+    } //for
 }
-    printStars(4);
+    printStars(5);
