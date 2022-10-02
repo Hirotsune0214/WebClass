@@ -25,4 +25,7 @@ let number = [10, 20, 30];
 for (let i = 0; i < number.length; i++){
   console.log(number[i]);
 }
-配列の要素に対して1つずつ順に処理を実行できる*/
+配列の要素に対して1つずつ順に処理を実行できる
+iにループの何回目かが入っているから、numberに
+iをつける
+*/
