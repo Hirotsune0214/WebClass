@@ -1,13 +1,11 @@
 /*let word = "Yaletown";
 let str = "Vancouver";
-
 if(
   word.includes("Y")){
   console.log("True");
 }else{
   console.log("False");
 }
-
 if(str.includes("Y")){
   console.log("True");
 }else{
@@ -34,9 +32,7 @@ function printYes(str){
 printYes("crazy");
 
 /* function printYes(str) {
-
      let exists = false; // This flag value tells us if y exists or not
-
      for (let i = 0; i < str.length; i++) {
          if (str[i] == 'y') {
              exists = true;
@@ -46,7 +42,6 @@ printYes("crazy");
             exists = false;
         }
      }
-
      if (exists == true) {
          console.log('Yes');
      } else {
