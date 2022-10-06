@@ -41,5 +41,17 @@
 // console.log(a);
 // b();
 
-var a = 10;
-console.log(window.a);
+function main() {
+  let a = 1;
+  let b = 2;
+
+  a = a + b;
+  b = a - b;
+  a = a - b; 
+
+   console.log( "a is", a );
+   console.log( "b is", b );
+
+}
+//call function
+main();

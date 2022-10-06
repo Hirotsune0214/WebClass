@@ -14,17 +14,17 @@ function reverse(str){
 let numList = reverse("awesome"); //emosewaで反対に出来る
 console.log(numList);*/
 
-function reverse (str) {
-  if (str === "") {
-      return "";
-  } else {
-      return reverse(str.substr(1)) + str.charAt(0);
-  }
-}
-reverse("awesome") // "emosewa"
-reverse("rithmschool") // "loohcsmhtir"
-let reverseStringIs = reverse("awesome", "rithmschool")
-console.log(reverseStringIs)
+// function reverse (str) {
+//   if (str === "") {
+//       return "";
+//   } else {
+//       return reverse(str.substr(1)) + str.charAt(0);
+//   }
+// }
+// reverse("awesome") // "emosewa"
+// reverse("rithmschool") // "loohcsmhtir"
+// let reverseStringIs = reverse("awesome", "rithmschool")
+// console.log(reverseStringIs)
 
 
 //prime number : 素数 = 1と自分自身でしか割れない数字 
@@ -57,3 +57,21 @@ int main()
   
   return 0;
 }*/
+
+function main() {
+  let a = 1;
+  let b = 2;
+
+  a = a + b;
+  b = a - b;
+  a = a - b; 
+
+  console.log("After swapping values are" + "a is", a + "b is", b);
+
+
+return 0;
+}
+  // // Arithmatic Code to swap 'x' and 'y'
+  // x = x + y;  // after addition x with contain 42
+  // y = x - y;  // y will contanis 25
+  // x = x - y;  // x becomes 17

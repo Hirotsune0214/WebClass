@@ -20,8 +20,8 @@
 
 
 
-// // productOfArray([1,2,3]) // 6 
-// // productOfArray([1,2,3,10]) // 60
+// productOfArray([1,2,3]) // 6 
+// productOfArray([1,2,3,10]) // 60
 
 // // let numList = [1,2,3];
 
