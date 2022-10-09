@@ -41,17 +41,34 @@
 // console.log(a);
 // b();
 
-function main() {
-  let a = 1;
-  let b = 2;
+// function main() {
+//   let a = 1;
+//   let b = 2;
 
-  a = a + b;
-  b = a - b;
-  a = a - b; 
+//   a = a + b;
+//   b = a - b;
+//   a = a - b; 
 
-   console.log( "a is", a );
-   console.log( "b is", b );
+//    console.log( "a is", a );
+//    console.log( "b is", b );
 
+// }
+// //call function
+// main();
+
+//
+
+let Hiro = {
+    name : "Hiro",
+    age : 27,
+    address : {
+      city : "Vancouver",
+      province : "BC(州)",
+    },
+    student : function() {
+      console.log("Hiro is a student of CICCC")
+    }
 }
-//call function
-main();
+
+Hiro["student"]();
+
