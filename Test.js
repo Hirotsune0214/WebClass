@@ -57,18 +57,26 @@
 // main();
 
 //
+let num = 100;
 
-let Hiro = {
-    name : "Hiro",
-    age : 27,
-    address : {
-      city : "Vancouver",
-      province : "BC(州)",
-    },
-    student : function() {
-      console.log("Hiro is a student of CICCC")
-    }
+switch(num){
+  case 10 :
+    console.log("The value given to me is 10");
+    break;
+  case 50 :
+    console.log("The value given to me is 50");
+    break;
+  case 70 :
+    console.log("The value given to me is 70");
+    break;
+  case 100 :
+    console.log("The value given to me is 100");
+    break;
+  default :
+    console.log("no match found");
+    
+
+
+
+
 }
-
-Hiro["student"]();
-
