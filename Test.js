@@ -56,27 +56,34 @@
 // //call function
 // main();
 
-//
-let num = 100;
+// let x = 0;
+//  for(let j = 0; j < 100; j++){
+//   for(let k = 100; k > 0; k--){
+//     x++;
+//   }
+//  }
+// console.log(x);
 
-switch(num){
-  case 10 :
-    console.log("The value given to me is 10");
-    break;
-  case 50 :
-    console.log("The value given to me is 50");
-    break;
-  case 70 :
-    console.log("The value given to me is 70");
-    break;
-  case 100 :
-    console.log("The value given to me is 100");
-    break;
-  default :
-    console.log("no match found");
-    
+/*
+Input: nums = [2,7,11,15], target = 9
+Output: [0,1]
+Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
+*/
 
 
+var twoSum = function(nums, target) {
+    let sum = 0;
+
+    for(let i = 0; i > nums.length -1; i++){
+        sum += nums[i];
+    }
+};
+nums = [2,7,11,15]
+console.log(twoSum);
+
+/*
+forEachを使用して値を出して、if文で9ならreturnで違うなら戻る
+それかネストで値が9のものを出す
 
 
-}
+*/

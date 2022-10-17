@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>カウントダウン</title>
+
+    <style>
+      div.btn {
+        margin-left: 70px;
+      }
+      table {
+        border-collapse: collapse;
+        width: 200px;
+      }
+      td.itemname {
+        width: 50%;
+        background-color:lightgray;
+        text-align: center;
+      }
+      td.countvalue {
+        text-align: center;
+      }
+    </style>
+ 
+    <script>
+      function countDown() {
+        let num = 10;
+        if (num >= 0) {
+          //count = num;
+          //ID countにnum(10)を設定
+          
+          document.getElementById('count').innerHTML = num;
+          //countDown関数を1秒後に設定
+          //無名関数
+          //function hoge(x,y){
+          //return x+y;
+
+          setTimeout(countDown(){
+            return num - 1;
+          },2000);
+          setTimeout(function(){
+            return countDown(8);
+          },3000);
+          setTimeout(function(){
+            return countDown(7);
+          },4000);
+          setTimeout(function(){
+            return countDown(6);
+          },5000);
+          setTimeout(function(){
+            return countDown(5);
+          },6000);
+          setTimeout(function(){
+            return countDown(4);
+          },7000);
+          setTimeout(function(){
+            return countDown(3);
+          },8000);
+          setTimeout(function(){
+            return countDown(2);
+          },9000);
+          setTimeout(function(){
+            return countDown(1);
+          },10000);
+          setTimeout(function(){
+            return countDown(0);
+          },11000);
+          } //if
+        } //function
+    </script>
+<!-- returnを呼び出しても、引数を持つcountDownのfunctionがhtml内に存在しないため、エラーになっていま -->
+  </head>
+
+  <body>
+  <div>カウントダウン開始ボタンを押してください。10 〜 0へカウントダウンします。</div>
+
+    <div><br></div>
+    <div class="btn">
+      <input type="button" value="カウントダウン開始" onclick="countDown(10)"> 
+      <!-- countDown()内に10はいる?? -->
+    </div>
+    <div><br></div>
+    <table border=1>
+      <tr>
+        <td class="itemname">カウント</td>
+        <td class="countvalue"><span id="count"></span></td>
+      </tr>
+    </table>
+  </body>
+</html>

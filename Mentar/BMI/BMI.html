@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>BMI計算</title>
+  <style>
+    .title {
+      font-size: 20px;
+    }
+
+    div.btn {
+      margin-left: 70px;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 200px;
+    }
+
+    td.itemname {
+      width: 50%;
+      background-color: lightgray;
+      text-align: center;
+    }
+
+    td.bmivalue {
+      text-align: right;
+    }
+
+    .txt {
+      width: 70px;
+      text-align: right;
+    }
+  </style>
+  <script>function calculationBMI() {
+      //任意のHTMLタグで指定したIDにマッチするドキュメント要素を取得するメソッド
+      //変数 = document.getElementById(idの値).value;
+      //下記の値が取得出来たら表示されるはず
+      let height = document.getElementById("myHeight").value;
+      let weight = document.getElementById("myWeight").value;
+
+      let temp;
+      temp = height / 100;
+      let bmi
+      bmi = weight / (temp * temp);
+
+      //BMIの値を画面に表示
+      //innerHTMLはHTML要素の中身を取得したり、変更したりすることができるプロパティ
+      //document.getElementById("id 名").innerHTML　=　書き換え後の内容；
+      document.getElementById("bmi").innerHTML = Math.floor(bmi * 100) / 100;
+    }
+  </script>
+</head>
+
+<body>
+  <div class="title"></div>
+  <h2>BMI計算</h2>
+  <p>身長(cm)と体重(kg)を入力した後に計算ボタンを押してください。BMIが表示されます。</p>
+  <table border="1">
+    <tbody>
+      <tr>
+        <td class="itemname">身長(cm)</td>
+        <td>
+          <input class="txt" type="text" id="myHeight" value="">
+        </td>
+      </tr>
+      <tr>
+        <td class="itemname">体重(kg)</td>
+        <td><input class="txt" type="text" id="myWeight" value="">
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div>
+    <br>
+  </div>
+  <div class="btn">
+    <input type="button" value="計算" onclick="calculationBMI()">
+    
+  </div>
+  <div>
+    <br>
+  </div>
+  <table border="1">
+    <tbody>
+      <tr>
+        <td class="itemname">BMI</td>
+        <td class="bmivalue">
+          <span id="bmi"></span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>
