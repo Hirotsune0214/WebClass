@@ -14,10 +14,10 @@ for(let num = 10; num >= 0; num--){
 }
 */
 
-var count = 10;
-  var countdown = function(){
+let count = 10;
+  let countdown = function(){
     console.log(count--);
-    var id = setTimeout(countdown, 1000);
+    let id = setTimeout(countdown, 1000);
     if(count < 0){
       clearTimeout(id);
     }
