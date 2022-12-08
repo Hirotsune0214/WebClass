@@ -1,0 +1,45 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- relはhrefのファイルとの関係性 -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- First wat using internal Javascript -->
+  <!-- <script>
+      console.log("I am working");
+  </script> -->
+
+  <!-- If you load js here , then anything in js which is dependent on html, will not work, so it's
+  better to declare this script tag either in the end of body tag -->
+  <!-- <script src="script.js"></script> -->
+
+  <script src="script.js" defer></script>
+  
+</head>
+
+<body>
+    <button id="myButton" class="btn">Click Me!</button>
+
+    <input type="number" placeholder="Enter First Number Here!" onchange="setFirstNumber(event)">
+
+    <!-- onchange = テキストが（部分的にでも）選択されたときに実行するスクリプトを指定する属性 -->
+    <input type="number" placeholder="Enter Second Number Here!" onchange="setSecondNumber(event)">
+
+    <button class="btn" onclick="findSum()">Calculates Sum</button>
+
+
+    <!-- <script src="script.js"></script> -->
+
+    
+    <div id="myDiv">
+
+    </div>
+
+
+</body>
+
+</html>
