@@ -1,0 +1,19 @@
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(72, 70, 70);
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  font-size: 30px;
+}
+
+ul li {
+  margin-left: 1em;
+}
+
+.flex-item1 {
+  color: white;
+}

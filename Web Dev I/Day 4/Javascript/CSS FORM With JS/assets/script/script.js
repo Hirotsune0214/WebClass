@@ -52,7 +52,35 @@ function submitForm(event) {
   // イベントに対するデフォルトの動作をキャンセルする
   event.preventDefault();
   console.log(newUser);
+
   userList.push(newUser);
+
+  // Fix 1 - By Doing Deep Copy in JS
+
+  // JSON - Javascript Object Notation
+
+  // Object
+  // let a = {
+  //   x :10
+  // }
+
+  // // JSON
+  // // let a = {
+  // //   'x': 10
+  // // }
+
+  // // FIX 1
+  // // JSON.stringify
+  // // We did Deep copy of newUser
+  // // JSON.parse() は、JSON 文字列を取得
+  // // JSON.stringify()はJavaScriptのObjectをJSONの文字列に変換することのできる静的メソッド
+  // let newUserObject = JSON.parse(JSON.stringify(newUser));
+  // userList.push(newUserObject);
+
+
+  // // FIX 2
+  // // let newUserObject2 = {...newUser};
+  // userList.push(newUser);
 }
 
 function showUserList() {
@@ -62,3 +90,4 @@ function showUserList() {
 // Right now the data will be replicated everytime with the last submitted value.
 // Because of pass by reference, which means the object the we are saving inside the array is pointing to the same object everytime!
 // 今のコードだと数人登録後にshow usersを押下しても最後に登録された情報のみが複数回表示される
+// FIX 1を入れたのでデータを別々に保存出来るようになった

@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (min-width: 480px) {
+
+  /* When the screen size becomes equal or greater than 480px make the width to 100% */
+  /* 480より大きくなったら下記が作動する */
+  img {
+    width: 100%;
+  }
+
+  .flex-item1{
+    text-align: center;
+  }
+
+  .flex-container {
+    flex-direction: column;
+  }
+
+}

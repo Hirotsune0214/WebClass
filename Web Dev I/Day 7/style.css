@@ -1,0 +1,56 @@
+.flex-container {
+  /* flex = その直下の要素が並列になる */
+  display: flex;
+
+  /* Flex Direction */
+
+  /* フレックスアイテムが主軸に沿って左から右(1-3)に配置される */
+  /* flex-direction: row; */
+
+  /* フレックスアイテムが主軸に沿って上から下(1-3)に配置される */
+  /* flex-direction: column; */
+
+  /* フレックスアイテムが主軸に沿って右から左(3-1)に配置される */
+  /* This reverses the elements. so it brings last to first, and first to last in a row */
+  /* flex-direction: row-reverse; */
+
+  /* フレックスアイテムが主軸に沿って下から上(3-1)に配置される */
+  /* flex-direction: column-reverse; */
+
+  /* 親要素から子要素であるフレックスアイテムがはみ出てしまう場合、はみ出さずに改行をして表示させることが出来ます。 */
+  flex-wrap: wrap;
+
+  /* align-items: 位置*/
+  /* This takes individual elements to the top of the main-axis 
+   flexboxコンテナのクロス軸に合わせて、上部に配置*/
+  /* align-items: flex-start; */
+
+  /* flexboxコンテナのクロス軸に合わせて、中央に配置 */
+  /* This takes individual elements and brings them to the center of the main axis */
+  /* align-items: center; */
+
+  /* flexboxコンテナのクロス軸に合わせて、下部に配置します */
+  /* This takes individual elements to the bottom of the main-axis */
+  /* align-items: flex-end; */
+
+  /* flexboxコンテナのクロス軸の幅に合わせて、flexboxアイテムを伸縮 */
+  /* So this was the default value of align items */
+  /* align-items: stretch; */
+
+  /* justify-content: flex-start; */
+  /* フレックスアイテムの主軸方向の揃え位置を指定 */
+  /* justify-content: center; */
+}
+
+article {
+  border: 1px solid black;
+
+  /* アイテムの大きさを指定 */
+  flex-basis: 33%;
+
+  /* width: 33px; */
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

@@ -1,0 +1,69 @@
+/* Banner */
+.banner {
+  text-align: center;
+  background-color: rgb(72, 70, 70);
+  color: white;
+}
+
+.font1 {
+  color: #FF6600;
+}
+
+.subtitle {
+  font-size: 30px;
+}
+
+/* .banner {
+  margin-bottom: 1rem;
+} */
+
+/**********************************************************************/
+/* location */
+
+.location {
+  text-align: center;
+}
+
+.location_logo {
+  width: 50%;
+  height: 50%;
+}
+
+.subtitle1 {
+  font-size: 30px;
+}
+/**********************************************************************/
+
+/* tent */
+
+.tent {
+  text-align: center;
+  background-color: #FF6600;
+}
+
+.subtitle2 {
+  font-size: 30px;
+}
+
+/**********************************************************************/
+
+/* campfire */
+
+.campfire {
+  text-align: center;
+}
+
+.subtitle3 {
+  font-size: 30px;
+}
+
+/**********************************************************************/
+
+/* footer */
+
+footer {
+  text-align: center;
+  background-color: gray;
+  color: white;
+  font-size: 30px;
+}
