@@ -1,0 +1,144 @@
+/* 全体設定 */
+.css-carousel-slider5 {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.css-carousel-slider5 img {
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+/* スライド設定 */
+.css-carousel-slider5 .slide-wrap {
+  width: 500%;
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  animation: css-carousel-slider5 25s infinite;
+  animation-delay: 2s;
+}
+
+.css-carousel-slider5 .slide-wrap-main {
+  width: 100%;
+  z-index: 1;
+  animation: css-carousel-slider-main5 25s infinite;
+  animation-delay: 2s;
+}
+
+.css-carousel-slider5 .slide {
+  width: 100%;
+}
+
+.slide {
+  width: auto;
+  height: 60%;
+}
+
+/* スライダーアニメーションの設定 */
+@keyframes css-carousel-slider5 {
+  0% {
+    transform: translateX(0);
+  }
+
+  16% {
+    transform: translateX(calc(1 / 5 * -100%));
+  }
+
+  20% {
+    transform: translateX(calc(1 / 5 * -100%));
+  }
+
+  36% {
+    transform: translateX(calc(2 / 5 * -100%));
+  }
+
+  40% {
+    transform: translateX(calc(2 / 5 * -100%));
+  }
+
+  56% {
+    transform: translateX(calc(3 / 5 * -100%));
+  }
+
+  60% {
+    transform: translateX(calc(3 / 5 * -100%));
+  }
+
+  76% {
+    transform: translateX(calc(4 / 5 * -100%));
+  }
+
+  80% {
+    transform: translateX(calc(4 / 5 * -100%));
+  }
+
+  96% {
+    transform: translateX(calc(5 / 5 * -100%));
+  }
+
+  100% {
+    transform: translateX(calc(5 / 5 * -100%));
+  }
+}
+
+@keyframes css-carousel-slider-main5 {
+  0% {
+    transform: translateX(100%);
+  }
+
+  80% {
+    transform: translateX(100%);
+  }
+
+  96% {
+    transform: translateX(0%);
+  }
+}
+
+
+
+.motto {
+  text-align: center;
+  /* ine-heightは文字の大きさと上下の余白を合わせた高さのことを言います。 */
+  line-height: 2;
+  font-size: 20px;
+  font-family: 'Merriweather', serif;
+  background-color: gray;
+  letter-spacing: 0.05em;
+  line-height: 3.0em;
+  margin-bottom: 50px;
+}
+
+/************************************************************/
+
+.menuTitle {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.menu {
+  display: flex;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  padding-right: 60px;
+  overflow: scroll;
+
+}
+
+.menupic {
+  width: 260px;
+  height: 260px;
+}
+
+iframe {
+  width: 300px;
+  height: 200px;
+}
+
+/************************************************************/
