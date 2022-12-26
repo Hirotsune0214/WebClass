@@ -1,0 +1,23 @@
+.listMenu {
+  /* max-width: 75px; */
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: 180px;
+  /* 行と列で区切ったグリッドの中にコンテンツを自由に配置する事ができる。 */
+  display: grid;
+  /* 横並びになる */
+  grid-template-columns: repeat(auto-fit, 240px);
+  column-gap: 195px;
+  row-gap: 60px;
+  justify-content: center;
+}
+
+.menuPic {
+  width: 345px;
+  height: 200px;
+}
+
+dt {
+  font-size: 20px;
+  margin-top: 10px;
+}

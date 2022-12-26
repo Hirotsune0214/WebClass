@@ -111,10 +111,16 @@
   background-color: gray;
   letter-spacing: 0.05em;
   line-height: 3.0em;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
+}
+
+.word {
+  border: solid;
+  border-color: white;
 }
 
 /************************************************************/
+
 
 .menuTitle {
   text-align: center;
@@ -140,5 +146,33 @@ iframe {
   width: 300px;
   height: 200px;
 }
+
+.button {
+  text-align: center;
+}
+
+/* solid004 */
+.button_solid004 a {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 80px;
+  padding: 10px 25px;
+  color: #FFF;
+  transition: 0.3s ease-in-out;
+  font-weight: 600;
+  background: #6bb6ff;
+  border-radius: 8px;
+  border-bottom: solid 5px #1d7fde;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.button_solid004 a:hover {
+  border-bottom: solid 2px #1d7fde;
+  transform: translateY(3px);
+}
+
 
 /************************************************************/
