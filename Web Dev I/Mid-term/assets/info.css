@@ -1,0 +1,30 @@
+.information {
+  position: relative;
+  background: linear-gradient(transparent 30%, yellow 40%);
+  font-size: 30px;
+}
+
+article {
+  text-align: center;
+  line-height: 80px;
+  margin-top: 40px;
+  margin-bottom: 60px
+}
+
+.title {
+  font-size: 60px;
+}
+
+/****** Base style. 
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-family: YuMincho, "游明朝体", "YuMincho", "游明朝", "Yu Mincho", "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3";
+}
+
+p {
+  width: 80%;
+}******/

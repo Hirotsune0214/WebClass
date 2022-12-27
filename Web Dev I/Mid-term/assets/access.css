@@ -3,34 +3,6 @@
   padding: 0;
 }
 
-.flex-container {
-  /* 横並び */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  /* 下記は意味ある？？ */
-  max-width: 1200px;
-  /* 下記の使用前後を確認する */
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-li {
-  list-style: none;
-  float: left;
-  /* 意味を調べる */
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
-}
-
-.flex-item1 {
-  padding: 0 0 0 270px; 
-  /* 他のやり方も探す */
-} 
-
 /* header */
 /************************************************************/
 
