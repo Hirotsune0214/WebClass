@@ -40,6 +40,8 @@ ul {
 #open {
   padding-left: 50px;
   line-height: 25px;
+  position: relative;
+  left: 20px;
 }
 
 .copyright {
@@ -122,6 +124,18 @@ body {
   right: 5px;
 }
 
+.email {
+  font-size: 21px;
+  position: relative;
+  right: 80px;
+  top: 10px;
+}
+
+#email {
+  position: relative;
+  bottom: 9px;
+  font-size: 25px;
+}
 /****************************************************************************************/
 /* Tablet 768 x 1024 */
 
@@ -201,6 +215,19 @@ body {
     position: relative;
     bottom: 50px;
     font-size: 40px;
+  }
+
+  .email {
+    font-size: 38px;
+    position: relative;
+    right: 140px;
+    top: 20px;
+  }
+  
+  #email {
+    position: relative;
+    bottom: 15px;
+    font-size: 50px;
   }
 }
 
@@ -354,5 +381,20 @@ body {
     right: 170px;
   }
 
+  #email {
+    font-size: large;
+  }
 
+  .email {
+    font-size: 30px;
+    position: relative;
+    right: 110px;
+    top: 20px;
+  }
+  
+  #email {
+    position: relative;
+    bottom: 15px;
+    font-size: 40px;
+  }
 }
