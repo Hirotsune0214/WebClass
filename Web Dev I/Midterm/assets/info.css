@@ -1,7 +1,7 @@
 @charset "UTF-8";
 .information {
   background: linear-gradient(transparent 30%, yellow 40%);
-  font-size: 29px;
+  font-size: 25px;
 }
 
 article {
@@ -12,7 +12,7 @@ article {
 }
 
 .title {
-  font-size: 35px;
+  font-size: 30px;
 }
 
 #info {
