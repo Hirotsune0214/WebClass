@@ -23,66 +23,17 @@
 dt {
   text-align: center;
   padding-left: 160px;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
   margin-top: 15px;
 }
 
-/*****************************************************
-/* Tablet 768 x 1024 */
-
-@media screen and (min-width:768px) {
-
-  .listMenu {
-    margin-right: 400px;
-
-  }
-
-  .menuPic {
-    width: 600px;
-    height: 400px;
-  }
-
-  dt {
-    padding-left: 250px;
-    font-size: 35px;
-    font-weight: bold;
-    margin-top: 25px;
-  }
-
-  #tea {
-    margin-left: 50px;
-  }
+li {
+  list-style:none
 }
 
-@media only screen and (max-width: 1920px) and (min-width: 769px) {
+/*****************************************************/
 
-  .listMenu {
-    margin-right: 180px;
-    justify-content: center;
-  }
-
-  .menuPic {
-    width: 345px;
-    height: 200px;
-  }
-
-  dt {
-    font-size: 20px;
-    margin-top: 10px;
-    position: relative;
-    right: 80px;
-  }
-
-  #tea {
-    position: relative;
-    right: 115px;
-  }
-
-  .listMenu {
-    row-gap: 10px;
-    margin-bottom: 55px;
-    margin-top: 10px;
-  }
-
+@media screen and (min-width:768px) {
+  /* 画像を2列にして表示できるように出来たらする */
 }
