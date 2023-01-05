@@ -1,85 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+      <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=M+PLUS+Rounded+1c:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/common.css" />
+    <link rel="stylesheet" href="assets/menu.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Menu</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-  <link rel="stylesheet" href="assets/common.css">
-  <link rel="stylesheet" href="assets/menu.css">
-  
-</head>
+  <body>
+    <header class="flex-container">
+      <h1 class="flex-item1">Coffee shop</h1>
 
-<body>
-  <header class="flex-container">
-    <h1 class="flex-item1">Coffee shop</h1>
+      <nav class="flex-item2">
+        <ul>
+          <li class="header-item"><a href="index.html">Home</a></li>
+          <li class="header-item"><a href="menu.html">Menu</a></li>
+          <li class="header-item"><a href="access.html">Access</a></li>
+          <li class="header-item"><a href="info.html">Info</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <nav class="flex-item2">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="access.html">Access</a></li>
-        <li><a href="info.html">Info</a></li>
-      </ul>
-    </nav>
-  </header>
+    <main>
+      <nav>
+        <ul class="listMenu">
+          <li>
+              <img class="menuPic" src="assets/img/coffee.jpeg" />
+              <dt>coffee</dt>
+            </div>
+          </li>
 
-  <main>
-    <nav>
-      <ul class="listMenu">
-        <li>
-          <img class="menuPic" src="assets/img/coffee.jpeg">
+          <li>
+            <img class="menuPic" src="assets/img/cafeOle.jpg" />
+            <dt>CafeOle</dt>
+          </li>
+          <li>
+            <img class="menuPic" src="assets/img/cafeLatte.jpg" />
+            <dt>CafeLatte</dt>
+          </li>
+          <li>
+            <img class="menuPic" src="assets/img/tea.jpg" />
+            <dt id="tea">Tea</dt>
+          </li>
+          <li>
+            <img class="menuPic" src="assets/img/croissant.jpg" />
+            <dt>croissant</dt>
+          </li>
+          <li>
+            <img class="menuPic" src="assets/img/tacoRice.jpg" />
+            <dt>TacoRice</dt>
+          </li>
+        </ul>
+      </nav>
+    </main>
 
-          <dt>coffee</dt>
+    <footer class="footer">
+      <nav class="site-menu">
+        <ul>
+          <li class="footer-menu"><a href="index.html">Home</a></li>
+          <li class="footer-menu"><a href="menu.html">Menu</a></li>
+          <li class="footer-menu"><a href="access.html">Access</a></li>
+          <li class="footer-menu"><a href="info.html">Info</a></li>
+        </ul>
+      </nav>
 
-        </li>
-
-        <li>
-          <img class="menuPic" src="assets/img/cafeOle.jpg">
-          <dt>CafeOle</dt>
-        </li>
-        <li>
-          <img class="menuPic" src="assets/img/cafeLatte.jpg">
-          <dt>CafeLatte</dt>
-        </li>
-        <li>
-          <img class="menuPic"  src="assets/img/tea.jpg">
-          <dt id="tea">Tea</dt>
-        </li>
-        <li>
-          <img class="menuPic" src="assets/img/croissant.jpg">
-          <dt>croissant</dt>
-        </li>
-        <li>
-          <img class="menuPic" src="assets/img/tacoRice.jpg">
-          <dt>TacoRice</dt>
-        </li>
-      </ul>
-    </nav>
-  </main>
-
-  <footer class="footer">
-    <nav class="site-menu">
-      <ul>
-        <li class="footer-menu"><a href="index.html">Home</a></li>
-        <li class="footer-menu"><a href="menu.html">Menu</a></li>
-        <li class="footer-menu"><a href="access.html">Access</a></li>
-        <li class="footer-menu"><a href="info.html">Info</a></li>
-      </ul>
-    </nav>
-
-    <p class="footer-tel">TEL 01-2345-6789</p>
-    <p class="email">Email</p>
-    <a id="email" href="mailto:ciccc@example.com" class="fa-regular fa-envelope"></a>
-    <p class="footer-time"><span id="open">OPEN</span> <br>Mon-Fri 7:00-17:00<br> Sat-Sun 6:00-16:00</p>
-    <a id="twitter" href="https://twitter.com/?logout=1672129849435class=" class = "fa-brands fa-twitter" target="blank"></a>
-    <a id="instagram" href="https://www.instagram.com/" class="fa-brands fa-instagram" target="blank"></a>
-    <a id="facebook" href="https://www.facebook.com/" class="fa-brands fa-facebook" target="blank"></a>
-    <p class="copyright"><small>&copy;Coffee</small></p>
-
-  </footer>
-</body>
-
+      <p class="footer-tel">TEL 01-2345-6789</p>
+      <p class="email">Email</p>
+      <a
+        id="email"
+        href="mailto:ciccc@example.com"
+        class="fa-regular fa-envelope"
+      ></a>
+      <p class="footer-time">
+        <span id="open">OPEN</span> <br />Mon-Fri 7:00-17:00<br />
+        Sat-Sun 6:00-16:00
+      </p>
+      <a
+        id="twitter"
+        href="https://twitter.com/?logout=1672129849435class="
+        class="fa-brands fa-twitter"
+        target="blank"
+      ></a>
+      <a
+        id="instagram"
+        href="https://www.instagram.com/"
+        class="fa-brands fa-instagram"
+        target="blank"
+      ></a>
+      <a
+        id="facebook"
+        href="https://www.facebook.com/"
+        class="fa-brands fa-facebook"
+        target="blank"
+      ></a>
+      <p class="copyright"><small>&copy;Coffee</small></p>
+    </footer>
+  </body>
 </html>

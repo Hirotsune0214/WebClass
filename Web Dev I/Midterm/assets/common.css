@@ -6,6 +6,12 @@
 
 /* header */
 
+.flex-item1 {
+  font-family: "Lora", serif;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 25px;
+}
+
 .flex-container {
   /* 横並び */
   display: flex;
@@ -23,6 +29,20 @@ ul {
   list-style-type: none;
 }
 
+.header-item {
+  margin-left: 5px;
+  display: inline-block;
+  color: #000000;
+  font-size: 16px;
+  text-decoration: none;
+  transition: 0.5s;
+  font-family: "Lora", serif;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+.header-item:hover {
+  color: #fff;
+  text-shadow: -1px 1px 5px #2d30ee, 1px -1px 5px #2d30ee;
+}
 /******************** footer **************************************/
 
 .footer-tel {
@@ -90,11 +110,6 @@ body {
   margin-right: 10px;
 }
 
-.site-menu ul li a {
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-}
-
 .footer {
   color: #ffffff;
   background-color: #24211b;
@@ -143,8 +158,33 @@ body {
   left: 0.5em;
 }
 
+.footer-menu {
+  margin-left: 5px;
+  display: inline-block;
+  color: #fff;
+  font-size: 27px;
+  text-decoration: none;
+  transition: 0.5s;
+  font-family: "Lora", serif;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+.footer-menu:hover {
+  color: #fff;
+  text-shadow: -1px 1px 5px #fff200, 1px -1px 5px #fff200;
+}
+
 @media screen and (min-width: 768px) {
-  .footer {
-    font-size: 27px;
+  .header-item {
+    float: left;
+    font-size: 30px;
+    margin: 15px 15px 0 0;
+  }
+
+  .flex-item1 {
+    position: relative;
+    left: 40px;
+    font-size: 50px;
+    margin-top: 10px;
   }
 }

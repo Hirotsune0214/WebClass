@@ -19,6 +19,10 @@ article {
   word-break: break-all;
 }
 
+article {
+  background-color: rgb(252, 246, 236);
+}
+
 /****************************************************************************************/
 
 @media screen and (min-width:768px) {
