@@ -1,0 +1,29 @@
+@import "modules/_mixin";
+@import "modules/_variable";
+@import "modules/_typography";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: $primary;
+}
+
+header {
+    nav {
+        ul{
+
+            /* I can change column to row*/
+            @include flexContainer(column);
+            gap: 5px;
+            text-align: center;
+            li{
+                background-color: $primary;
+                color: white;
+                padding: 10px;
+            }
+        }
+    }
+}
