@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NETFLIX</title>
+    <link rel="stylesheet" href="Sass/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <h1>NETFLIX<i class="fa-sharp fa-solid fa-camera-movie"></i></h1>
+      <input type="checkbox" id="overlay-button" />
+      <label for="overlay-input" id="overlay-button"><span></span></label>
+      <div id="overlay">
+        <ul>
+          <li><i class="fa-solid fa-magnifying-glass fa-2x"></i></li>
+          <li><i class="fa-regular fa-bell fa-2x"></i></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Movies</a></li>
+          <li><a href="#">Series</a></li>
+          <li><a href="#">Cartoons</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="items-container">
+      <article class="main-item">
+        <img id="main-pic"
+          src="https://ecf5j3nfg2f.exactdn.com/wp-content/uploads/2021/02/Queens-gambit.jpg?strip=all&lossy=1&ssl=1"
+          alt="The Queens-gambit"
+        />
+      </article>
+
+      <h2 class="main-title">Popular on Netflix</h2>
+
+      <article class="item" id="popular-films">
+        <img
+          src="https://m.media-amazon.com/images/M/MV5BMDZkYmVhNjMtNWU4MC00MDQxLWE3MjYtZGMzZWI1ZjhlOWJmXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg"
+          alt="Stranger things"
+        />
+        <div class="film">
+          <p class="rate"><i class="fa-solid fa-star"></i>8.0</p>
+          <p class="seaons">4 Seaons</p>
+          <p>STRANGER THINGS</p>
+      </article>
+
+      <article class="item" id="popular-films">
+        <img
+          src="https://dnm.nflximg.net/api/v6/2DuQlx0fM4wd1nzqm5BFBi6ILa8/AAAAQdQ9ake-jkZuan2QJSGIELMOysGUvHevg0-zbqDSaQugn2zlsVmLheJc7D-xlxe-bQ4WrCUXFHgpQsOvl8bIhOD2b3fcy9unf6BcdY49bEHezKmQ2zpTHOsoMht5RIb_CQxVCzC1YxP4AIqKZCjO2LDB.jpg?r=46f"
+          alt="You"
+        />
+        <div class="film">
+          <p class="rate"><i class="fa-solid fa-star"></i>8.5</p>
+          <p class="seaons">4 Seaons</p>
+          <p>YOU</p>
+        </div>
+      </article>
+
+      <article class="item" id="popular-films">
+        <img
+          src="https://m.media-amazon.com/images/M/MV5BZmRjNDgxODUtY2E3OC00MzRhLWI5YzQtNDNkMzlmM2EwMDBhXkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_FMjpg_UX1000_.jpg"
+          alt="First Love"
+        />
+        <div class="film">
+          <p class="rate"><i class="fa-solid fa-star"></i>9.0</p>
+          <p class="seaons">1 Seaons</p>
+          <p>First Love</p>
+        </div>
+      </article>
+
+      <article class="item" id="popular-films">
+        <img
+          src="https://m.media-amazon.com/images/M/MV5BZmUwMGI4M2QtYmRlYy00NDQ1LThjNDAtYTI4NDNiNDg5MDViXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg"
+          alt="Alice in borderland"
+        />
+        <div class="film">
+          <p class="rate"><i class="fa-solid fa-star"></i>9.5</p>
+          <p class="seaons">2 Seaons</p>
+          <p>ALICE IN BORDERLAND</p>
+        </div>
+      </article>
+      </div>
+    </div>
+    </main>
+
+    <aside class="items-container" id="aside-container">
+      <h2 id="sub-newEpisode">New episode</h2>
+
+      <article class="item">
+        <img
+          src="https://m.media-amazon.com/images/M/MV5BZmRjNDgxODUtY2E3OC00MzRhLWI5YzQtNDNkMzlmM2EwMDBhXkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_FMjpg_UX1000_.jpg"
+          alt="First Love"
+        />
+        <div class="aside-film">
+          <p class="New_episode">First Love</p>
+          <p>Part 2, Episode 4</p>
+        </div>
+      </article>
+
+      <h2 class="sub-title">Cotinue watching</h2>
+
+      <article class="item">
+        <img
+          class="pic-stranger"
+          src="https://m.media-amazon.com/images/M/MV5BMDZkYmVhNjMtNWU4MC00MDQxLWE3MjYtZGMzZWI1ZjhlOWJmXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg"
+          alt="Stranger things"
+        />
+
+        <div class="aside-film" id="aside-explain">
+          <p>STRANGER THINGS</p>
+          <p>Part 2, Episode 4</p>
+          <p class="start"><i class="fa-solid fa-play"></i>Start</p>
+        </div>
+      </article>
+
+      <h2 class="sub-title2">Friends watching</h2>
+
+      <article class="item">
+        <img
+          class="pic-you"
+          src="https://dnm.nflximg.net/api/v6/2DuQlx0fM4wd1nzqm5BFBi6ILa8/AAAAQdQ9ake-jkZuan2QJSGIELMOysGUvHevg0-zbqDSaQugn2zlsVmLheJc7D-xlxe-bQ4WrCUXFHgpQsOvl8bIhOD2b3fcy9unf6BcdY49bEHezKmQ2zpTHOsoMht5RIb_CQxVCzC1YxP4AIqKZCjO2LDB.jpg?r=46f"
+          alt="You"
+        />
+        <div class="aside-film1">
+          <p><i class="fa-solid fa-star"></i>8.5 4 Seaons</p>
+          <p>YOU</p>
+        </div>
+      </article>
+    </aside>
+  </body>
+</html>

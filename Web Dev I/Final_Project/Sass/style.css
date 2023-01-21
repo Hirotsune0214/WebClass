@@ -1,0 +1,256 @@
+body {
+  font-family: "Noto Serif", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: -webkit-linear-gradient(left, #b9ccf1, #fdd7d7);
+}
+body h1 {
+  color: rgb(220, 33, 33);
+  padding: 18px;
+}
+
+/*
+header {
+  nav {
+    ul {
+      @include flexContainer(column);
+      gap: 5px;
+      text-align: center;
+      list-style: none;
+      li {
+        background-color: $primary;
+        color: white;
+        padding: 10px;
+      }
+    }
+  }
+}
+*/
+@keyframes bugfix {
+  from {
+    padding: 0;
+  }
+  to {
+    padding: 0;
+  }
+}
+@-webkit-keyframes bugfix {
+  from {
+    padding: 0;
+  }
+  to {
+    padding: 0;
+  }
+}
+#overlay-button {
+  position: absolute;
+  right: 0.5em;
+  top: 0.5em;
+  padding: 26px 11px;
+  z-index: 5;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#overlay-button span {
+  height: 4px;
+  width: 35px;
+  border-radius: 2px;
+  background-color: black;
+  position: relative;
+  display: block;
+  transition: all 0.2s ease-in-out;
+}
+
+#overlay-button span:before {
+  top: -10px;
+  visibility: visible;
+}
+
+#overlay-button span:after {
+  top: 10px;
+}
+
+#overlay-button span:before,
+#overlay-button span:after {
+  height: 4px;
+  width: 35px;
+  border-radius: 2px;
+  background-color: black;
+  position: absolute;
+  content: "";
+  transition: all 0.2s ease-in-out;
+}
+
+#overlay-button:hover span,
+#overlay-button:hover span:before,
+#overlay-button:hover span:after {
+  background: black;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox]:checked ~ #overlay {
+  visibility: visible;
+}
+
+input[type=checkbox]:checked ~ #overlay-button:hover span,
+input[type=checkbox]:checked ~ #overlay-button span {
+  background: transparent;
+}
+
+input[type=checkbox]:checked ~ #overlay-button span:before {
+  transform: rotate(45deg) translate(7px, 7px);
+}
+
+input[type=checkbox]:checked ~ #overlay-button span:after {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+#overlay {
+  height: 75vh;
+  width: 103vw;
+  background: white;
+  z-index: 2;
+  visibility: hidden;
+  position: fixed;
+}
+
+#overlay.active {
+  padding: 1em;
+}
+
+#overlay ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  height: 75vh;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+#overlay ul li {
+  padding: 1em;
+}
+
+#overlay ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+#overlay ul li a:hover {
+  color: #000 !important;
+}
+
+.items-container {
+  display: grid;
+  grid-template-columns: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.items-container .main-drama {
+  width: 100%;
+  height: 250px;
+}
+.items-container h2 {
+  text-align: center;
+  padding: 20px 0 0 0;
+}
+.items-container .item {
+  margin: 30px;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+.items-container .item img {
+  width: 100%;
+  border-radius: 30px;
+}
+.items-container .item .film {
+  position: relative;
+  bottom: 10px;
+}
+.items-container .item .film .rate {
+  position: relative;
+  right: 35px;
+  top: 19px;
+}
+.items-container .item .film .seaons {
+  position: relative;
+  left: 35px;
+  bottom: 3px;
+}
+.items-container .item .start {
+  color: rgb(220, 33, 33);
+}
+
+@media (min-width: 700px) {
+  .items-container {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    display: grid;
+    grid-template-columns: 35% 35% 30%;
+    grid-template-rows: 20vh 40vh 40vh;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas: "header header aside" "main main aside" "sub sub aside";
+    height: 100vh;
+  }
+  body header {
+    grid-area: header;
+  }
+  body header h1 {
+    font-size: 50px;
+    position: relative;
+    bottom: 30px;
+  }
+  body main {
+    grid-area: main;
+  }
+  body main .main-item {
+    grid-area: main;
+  }
+  body main #main-pic {
+    position: relative;
+    top: 100px;
+    left: 30px;
+    width: 650px;
+    height: 300px;
+    border-radius: 10%;
+  }
+  body main .sub-item {
+    grid-area: sub;
+  }
+  body main .main-title {
+    position: relative;
+    top: 400px;
+    right: 300px;
+    font-size: 35px;
+    white-space: nowrap;
+  }
+  body aside {
+    grid-area: aside;
+    border: 1px solid black;
+  }
+}/*# sourceMappingURL=style.css.map */
