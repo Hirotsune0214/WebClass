@@ -12,9 +12,6 @@ body {
   }
   main {
     grid-area: main;
-    .main-item {
-      grid-area: main;
-    }
     #main-pic {
       position: relative;
       top: 100px;
@@ -23,10 +20,7 @@ body {
       height: 300px;
       border-radius: 10%;
     }
-  .sub-item {
-    grid-area: sub;
-  }
-    
+ 
     .main-title {
       position: relative;
       top: 400px;
@@ -37,9 +31,4 @@ body {
 
     
   }
-  aside {
-    grid-area: aside;
-    border: 1px solid $black;
-  }
-
 }
