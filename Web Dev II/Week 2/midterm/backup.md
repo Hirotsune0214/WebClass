@@ -102,3 +102,26 @@ HTML
 
         <button onclick="">+ Create playlist</button>
     </div>
+
+
+
+
+
+
+
+ 
+ /* width:100%; */
+/*
+.container .f-container {
+   flex-direction: row;
+}
+*/
+
+/*
+一つのカゴに
+300px　横
+500px 縦
+その中にフルサイズで画像3つ入れる
+ display: grid;
+    grid-template-columns: repeat(3, 1fr);
+*?
